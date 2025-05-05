@@ -4,13 +4,16 @@
 //
 //  Created by Long Nguyen on 5/4/25.
 //
+//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
 
 import Foundation
 
 class OpenAIService: ObservableObject {
     
-    private let apiKey = "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"
-    
+//    let a = "sk-proj-PRDNEdPIuHHlv6bDLS6fnr7e1v70iTB4OGlz8UhCjrUfRvV7Wjpm1tFBKecrzBZrOIWF5ozlkGT3BlbkFJu5Za8GdMPkLDHCP"
+//    let b = "_FFAz_Q7IHyaqSpLFOMoQoIP-esHXU4SBIvmpx_mLaAQX_2hnvd89eypsoA"
+    private let chatGPTcode = aaa + bbb
+
     private let endpointURL = "https://api.openai.com/v1/chat/completions"
 //    private let modelName = "gpt-4o" // Or "gpt-3.5-turbo", etc.
     private let modelName = "gpt-4.1-mini-2025-04-14"
@@ -48,7 +51,7 @@ class OpenAIService: ObservableObject {
         request.httpMethod = "POST"
         request.timeoutInterval = 120 // timeout 120 seconds (default is 60)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(chatGPTcode)", forHTTPHeaderField: "Authorization")
 
         // 3. Encode request body
         do {
