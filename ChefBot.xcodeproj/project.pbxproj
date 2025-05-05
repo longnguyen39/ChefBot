@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A6046F42DC85CD70092248A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6046F32DC85CD70092248A /* FirebaseAuth */; };
+		3A6046F62DC85CD70092248A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6046F52DC85CD70092248A /* FirebaseCore */; };
+		3A6046F82DC85CD70092248A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6046F72DC85CD70092248A /* FirebaseDatabase */; };
+		3A6046FA2DC85CD70092248A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6046F92DC85CD70092248A /* FirebaseFirestore */; };
+		3A6046FC2DC85CD70092248A /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6046FB2DC85CD70092248A /* FirebaseFirestoreCombine-Community */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3AF32DBD2DBD9606002F08AF /* ChefBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6046F82DC85CD70092248A /* FirebaseDatabase in Frameworks */,
+				3A6046FA2DC85CD70092248A /* FirebaseFirestore in Frameworks */,
+				3A6046F62DC85CD70092248A /* FirebaseCore in Frameworks */,
+				3A6046FC2DC85CD70092248A /* FirebaseFirestoreCombine-Community in Frameworks */,
+				3A6046F42DC85CD70092248A /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = ChefBot;
 			packageProductDependencies = (
+				3A6046F32DC85CD70092248A /* FirebaseAuth */,
+				3A6046F52DC85CD70092248A /* FirebaseCore */,
+				3A6046F72DC85CD70092248A /* FirebaseDatabase */,
+				3A6046F92DC85CD70092248A /* FirebaseFirestore */,
+				3A6046FB2DC85CD70092248A /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = ChefBot;
 			productReference = 3AF32DBD2DBD9606002F08AF /* ChefBot.app */;
@@ -94,6 +112,9 @@
 			);
 			mainGroup = 3AF32DB42DBD9606002F08AF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3AF32DBE2DBD9606002F08AF /* Products */;
 			projectDirPath = "";
@@ -324,6 +345,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A6046F32DC85CD70092248A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3A6046F52DC85CD70092248A /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		3A6046F72DC85CD70092248A /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3A6046F92DC85CD70092248A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3A6046FB2DC85CD70092248A /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A6046F22DC85CD70092248A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AF32DB52DBD9606002F08AF /* Project object */;
 }
