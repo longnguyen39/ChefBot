@@ -4,15 +4,12 @@
 //
 //  Created by Long Nguyen on 5/4/25.
 //
-//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
 
 import Foundation
 
 class OpenAIService: ObservableObject {
     
-//    let a = "sk-proj-PRDNEdPIuHHlv6bDLS6fnr7e1v70iTB4OGlz8UhCjrUfRvV7Wjpm1tFBKecrzBZrOIWF5ozlkGT3BlbkFJu5Za8GdMPkLDHCP"
-//    let b = "_FFAz_Q7IHyaqSpLFOMoQoIP-esHXU4SBIvmpx_mLaAQX_2hnvd89eypsoA"
-    private let chatGPTcode = aaa + bbb
+    private let chatGPTcode = aaa + bbb //gotta break down API
 
     private let endpointURL = "https://api.openai.com/v1/chat/completions"
 //    private let modelName = "gpt-4o" // Or "gpt-3.5-turbo", etc.
